@@ -1,29 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Lucy Pet</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="./asset/image/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./asset/image/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./asset/image/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./asset/image/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./asset/image/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./asset/image/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./asset/image/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./asset/image/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./asset/image/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/image/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/image/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./asset/image/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./asset/image/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./asset/image/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./asset/css/reset.css">
-    <link rel="stylesheet" href="./asset/css/style.css">
-</head>
-<body>
-    
-</body>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./asset/image/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./asset/image/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./asset/image/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./asset/image/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./asset/image/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./asset/image/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./asset/image/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./asset/image/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./asset/image/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./asset/image/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./asset/image/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./asset/image/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./asset/image/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css style -->
+    <link rel="stylesheet" href="./asset/css/reset.css" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__navigation">
+        <div class="container">
+          <div class="logo-page__group">
+            <img
+              src="./asset/image/icon/logo-page.svg"
+              alt=""
+              class="logo__page"
+            />
+            <span class="logo__text">Lucy</span>
+          </div>
+          <nav class="navbar">
+            <ul class="nav__list">
+              <li class="nav__items home">Home</li>
+              <li class="nav__items about">About</li>
+              <li class="nav__items services-rate">Services & Rates</li>
+              <li class="nav__items reviews">Reviews</li>
+              <li class="nav__items contact-us">Contact Us</li>
+            </ul>
+          </nav>
+          <div class="login">
+            <button class="login__btn btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <section class="header__content">
+        <div class="container">
+          <div class="header__content-left">
+            <figure>
+              <img
+                src="./asset/image/img/dog_pet-1.webp"
+                alt=""
+                class="header__img large"
+              />
+            </figure>
+            <figure>
+              <img
+                src="./asset/image/img/pet.jpg"
+                alt=""
+                class="header__img small"
+              />
+            </figure>
+            <div class="header_subimg-group">
+              <div class="header_subimg-items">
+                <img
+                  src="./asset/image/img/cat.png"
+                  alt=""
+                  class="sub-img top-subimg"
+                />
+                <h3 class="sub-title">Pet Health</h3>
+              </div>
+
+              <div class="header_subimg-items">
+                <img
+                  src="./asset/image/img/dog_pet.png"
+                  alt=""
+                  class="sub-img bottom-subimg"
+                />
+                <h3 class="sub-title">Pet care</h3>
+              </div>
+            </div>
+            <figure class="header__content-decorate decorate-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="51"
+                height="102"
+                viewBox="0 0 51 102"
+                fill="none"
+              >
+                <path
+                  d="M29.9381 2.1582C29.9381 1.32978 29.2665 0.658203 28.4381 0.658203C27.6097 0.658203 26.9381 1.32978 26.9381 2.1582L26.9381 28.9686C26.9381 29.7971 27.6097 30.4686 28.4381 30.4686C29.2665 30.4686 29.9381 29.7971 29.9381 28.9686L29.9381 2.1582Z"
+                  fill="url(#paint0_linear_11_1245)"
+                />
+                <path
+                  d="M50.9811 2.1582C50.9811 1.32978 50.3095 0.658203 49.4811 0.658203C48.6527 0.658203 47.9811 1.32978 47.9811 2.1582L47.9811 99.9876C47.9811 100.816 48.6527 101.488 49.4811 101.488C50.3095 101.488 50.9811 100.816 50.9811 99.9876L50.9811 2.1582Z"
+                  fill="url(#paint1_linear_11_1245)"
+                />
+                <path
+                  d="M28.4381 71.6777C29.2665 71.6777 29.9381 72.3493 29.9381 73.1777L29.9381 99.9882C29.9381 100.817 29.2665 101.488 28.4381 101.488C27.6097 101.488 26.9381 100.817 26.9381 99.9882L26.9381 73.1777C26.9381 72.3493 27.6097 71.6777 28.4381 71.6777Z"
+                  fill="url(#paint2_linear_11_1245)"
+                />
+                <path
+                  d="M28.9454 66.7861C29.7739 66.7861 30.4454 66.1146 30.4454 65.2861C30.4454 64.4577 29.7739 63.7861 28.9454 63.7861L2.13501 63.7861C1.30658 63.7861 0.63501 64.4577 0.63501 65.2861C0.63501 66.1146 1.30658 66.7861 2.13501 66.7861H28.9454Z"
+                  fill="url(#paint3_linear_11_1245)"
+                />
+                <path
+                  d="M42.4669 0.658203C43.2953 0.658203 43.9669 1.32978 43.9669 2.1582L43.9669 99.9876C43.9669 100.816 43.2953 101.488 42.4669 101.488C41.6385 101.488 40.9669 100.816 40.9669 99.9876L40.9669 2.1582C40.9669 1.32978 41.6385 0.658203 42.4669 0.658203Z"
+                  fill="url(#paint4_linear_11_1245)"
+                />
+                <path
+                  d="M22.9244 2.1582C22.9244 1.32978 22.2529 0.658203 21.4244 0.658203C20.596 0.658203 19.9244 1.32978 19.9244 2.1582L19.9244 28.9686C19.9244 29.7971 20.596 30.4686 21.4244 30.4686C22.2529 30.4686 22.9244 29.7971 22.9244 28.9686L22.9244 2.1582Z"
+                  fill="url(#paint5_linear_11_1245)"
+                />
+                <path
+                  d="M21.4244 71.6777C22.2529 71.6777 22.9244 72.3493 22.9244 73.1777L22.9244 99.9882C22.9244 100.817 22.2529 101.488 21.4244 101.488C20.596 101.488 19.9244 100.817 19.9244 99.9882L19.9244 73.1777C19.9244 72.3493 20.596 71.6777 21.4244 71.6777Z"
+                  fill="url(#paint6_linear_11_1245)"
+                />
+                <path
+                  d="M28.9454 59.7715C29.7739 59.7715 30.4454 59.0999 30.4454 58.2715C30.4454 57.4431 29.7739 56.7715 28.9454 56.7715L2.13501 56.7715C1.30658 56.7715 0.63501 57.4431 0.63501 58.2715C0.63501 59.0999 1.30658 59.7715 2.13501 59.7715L28.9454 59.7715Z"
+                  fill="url(#paint7_linear_11_1245)"
+                />
+                <path
+                  d="M30.4454 44.2441C30.4454 45.0726 29.7739 45.7441 28.9454 45.7441L2.13501 45.7441C1.30658 45.7441 0.63501 45.0726 0.63501 44.2441C0.63501 43.4157 1.30658 42.7441 2.13501 42.7441L28.9454 42.7441C29.7739 42.7441 30.4454 43.4157 30.4454 44.2441Z"
+                  fill="url(#paint8_linear_11_1245)"
+                />
+                <path
+                  d="M36.9528 2.1582C36.9528 1.32978 36.2812 0.658203 35.4528 0.658203C34.6243 0.658203 33.9528 1.32978 33.9528 2.1582L33.9528 99.9876C33.9528 100.816 34.6243 101.488 35.4528 101.488C36.2812 101.488 36.9528 100.816 36.9528 99.9876L36.9528 2.1582Z"
+                  fill="url(#paint9_linear_11_1245)"
+                />
+                <path
+                  d="M14.4098 0.658203C15.2382 0.658203 15.9098 1.32978 15.9098 2.1582L15.9098 28.9686C15.9098 29.7971 15.2382 30.4686 14.4098 30.4686C13.5814 30.4686 12.9098 29.7971 12.9098 28.9686L12.9098 2.1582C12.9098 1.32978 13.5814 0.658203 14.4098 0.658203Z"
+                  fill="url(#paint10_linear_11_1245)"
+                />
+                <path
+                  d="M15.9098 73.1777C15.9098 72.3493 15.2382 71.6777 14.4098 71.6777C13.5814 71.6777 12.9098 72.3493 12.9098 73.1777L12.9098 99.9882C12.9098 100.817 13.5814 101.488 14.4098 101.488C15.2382 101.488 15.9098 100.817 15.9098 99.9882L15.9098 73.1777Z"
+                  fill="url(#paint11_linear_11_1245)"
+                />
+                <path
+                  d="M30.4454 51.2578C30.4454 52.0862 29.7739 52.7578 28.9454 52.7578L2.13501 52.7578C1.30658 52.7578 0.63501 52.0862 0.63501 51.2578C0.63501 50.4294 1.30658 49.7578 2.13501 49.7578L28.9454 49.7578C29.7739 49.7578 30.4454 50.4294 30.4454 51.2578Z"
+                  fill="url(#paint12_linear_11_1245)"
+                />
+                <path
+                  d="M28.9454 38.7295C29.7739 38.7295 30.4454 38.0579 30.4454 37.2295C30.4454 36.4011 29.7739 35.7295 28.9454 35.7295L2.13501 35.7295C1.30658 35.7295 0.63501 36.4011 0.63501 37.2295C0.63501 38.0579 1.30658 38.7295 2.13501 38.7295L28.9454 38.7295Z"
+                  fill="url(#paint13_linear_11_1245)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint4_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint5_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint6_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint7_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint8_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint9_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint10_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint11_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint12_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint13_linear_11_1245"
+                    x1="46.9861"
+                    y1="26"
+                    x2="25.4861"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD7CB" />
+                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <figure class="header__content-decorate decorate-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="232"
+                height="232"
+                viewBox="0 0 232 232"
+                fill="none"
+              >
+                <path
+                  d="M51.7229 115.109C51.7229 85.4309 75.7818 61.3721 105.46 61.3721C135.138 61.3721 159.197 85.4309 159.197 115.109C159.197 115.937 159.868 116.609 160.697 116.609C161.525 116.609 162.197 115.937 162.197 115.109C162.197 83.7741 136.795 58.3721 105.46 58.3721C74.1249 58.3721 48.7229 83.7741 48.7229 115.109C48.7229 118.961 49.1071 122.726 49.8396 126.365C50.0031 127.177 50.794 127.703 51.6061 127.539C52.4183 127.376 52.9441 126.585 52.7806 125.773C52.0871 122.327 51.7229 118.761 51.7229 115.109Z"
+                  fill="url(#paint0_linear_11_1244)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M112.035 40.8369C69.8053 40.8369 35.571 75.0712 35.571 117.301C35.571 159.532 69.8053 193.766 112.035 193.766C154.266 193.766 188.5 159.532 188.5 117.301C188.5 75.0712 154.266 40.8369 112.035 40.8369ZM38.571 117.301C38.571 76.7281 71.4622 43.8369 112.035 43.8369C152.609 43.8369 185.5 76.7281 185.5 117.301C185.5 157.875 152.609 190.766 112.035 190.766C71.4622 190.766 38.571 157.875 38.571 117.301Z"
+                  fill="url(#paint1_linear_11_1244)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.7893 116.863C19.7893 65.6744 61.2857 24.178 112.474 24.178C163.663 24.178 205.159 65.6744 205.159 116.863C205.159 168.051 163.663 209.548 112.474 209.548C61.2857 209.548 19.7893 168.051 19.7893 116.863ZM112.474 27.178C62.9426 27.178 22.7893 67.3313 22.7893 116.863C22.7893 166.394 62.9426 206.548 112.474 206.548C162.006 206.548 202.159 166.394 202.159 116.863C202.159 67.3313 162.006 27.178 112.474 27.178Z"
+                  fill="url(#paint2_linear_11_1244)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M115.981 0.503906C52.2026 0.503906 0.5 52.2065 0.5 115.985C0.5 179.763 52.2026 231.466 115.981 231.466C179.759 231.466 231.462 179.763 231.462 115.985C231.462 52.2065 179.759 0.503906 115.981 0.503906ZM3.5 115.985C3.5 53.8634 53.8595 3.50391 115.981 3.50391C178.103 3.50391 228.462 53.8634 228.462 115.985C228.462 178.107 178.103 228.466 115.981 228.466C53.8595 228.466 3.5 178.107 3.5 115.985Z"
+                  fill="url(#paint3_linear_11_1244)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_11_1244"
+                    x1="115.981"
+                    y1="0.503906"
+                    x2="115.981"
+                    y2="231.466"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF9771" stop-opacity="0.84" />
+                    <stop
+                      offset="0.954425"
+                      stop-color="#FF9771"
+                      stop-opacity="0"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_11_1244"
+                    x1="115.981"
+                    y1="0.503906"
+                    x2="115.981"
+                    y2="231.466"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF9771" stop-opacity="0.84" />
+                    <stop
+                      offset="0.954425"
+                      stop-color="#FF9771"
+                      stop-opacity="0"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_11_1244"
+                    x1="115.981"
+                    y1="0.503906"
+                    x2="115.981"
+                    y2="231.466"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF9771" stop-opacity="0.84" />
+                    <stop
+                      offset="0.954425"
+                      stop-color="#FF9771"
+                      stop-opacity="0"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_11_1244"
+                    x1="115.981"
+                    y1="0.503906"
+                    x2="115.981"
+                    y2="231.466"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF9771" stop-opacity="0.84" />
+                    <stop
+                      offset="0.954425"
+                      stop-color="#FF9771"
+                      stop-opacity="0"
+                    />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+          </div>
+          <section class="header__content-right">
+            <h2 class="header__title">
+              Established & Trusted Pet Care Service
+            </h2>
+            <p class="header__desc">
+              Discover a wide variety of Pawsitive services to choose from,
+              including daycare, private walks, office duty and spa.
+            </p>
+            <div class="header__group-btn">
+              <button class="header__btn">
+                <a href="#!" class="header__btn-link">Book a Meet</a>
+                <div class="header__arrow-right">
+                  <svg
+                    width="5"
+                    height="6"
+                    viewBox="0 0 5 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                      stroke="#FD5056"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <a href="#!" class="header__link">Schedule a Call</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about__body">
+            <section class="about__content">
+              <p class="about__label">// About //</p>
+              <h2 class="about__title">Best Agency For Your Pet.</h2>
+              <p class="about__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="about__check-list">
+                <span class="about__check-items">Certified Groomer</span>
+                <span class="about__check-items">Animal Lover</span
+                ><span class="about__check-items">14+ Years Experience</span
+                ><span class="about__check-items">Pet Parent Of 3 Dogs</span>
+              </div>
+            </section>
+            <div class="about__media">
+              <div class="about__card">
+                 <b class="about__card--title">
+                  20+
+                 </b>
+                 <p class="about__card-desc ">
+                  Years Experience
+                 </p>
+                 <img src="./asset/image/icon/decorate_cat.svg" alt="" class="about__card--decorate">
+              </div>
+              <figure class="about__img--wrap about__wrap--top">
+                <img src="./asset/image/img/about_people_cat.svg" alt="" class="about__image">
+              </figure>
+
+            </div>
+            <div class="about__media">
+              <figure class="about__img--wrap about__wrap--bottom">
+                <img src="./asset/image/img/dog__media.svg" alt="" class="about__image image__bottom">
+                <div >
+                  <img src="./asset/image/icon/decorate-1.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-2.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-3.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-4.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-5.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+                </div>
+              </figure>
+            </div>
+            <section class="about__content">
+              <h2 class="about__title">Taking A Vacation?
+                So Is Your Pet.</h2>
+              <p class="about__desc desc__bottom">
+                We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
