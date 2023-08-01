@@ -1,564 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lucy Pet</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./asset/image/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./asset/image/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./asset/image/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./asset/image/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./asset/image/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./asset/image/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./asset/image/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./asset/image/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./asset/image/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./asset/image/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./asset/image/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./asset/image/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./asset/image/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./asset/image/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- css style -->
-    <link rel="stylesheet" href="./asset/css/reset.css" />
-    <link rel="stylesheet" href="./asset/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__navigation">
-        <div class="container">
-          <div class="logo-page__group">
-            <img
-              src="./asset/image/icon/logo-page.svg"
-              alt=""
-              class="logo__page"
-            />
-            <span class="logo__text">Lucy</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lucy Pet</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./asset/image/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./asset/image/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./asset/image/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./asset/image/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./asset/image/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./asset/image/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./asset/image/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./asset/image/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./asset/image/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./asset/image/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./asset/image/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./asset/image/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./asset/image/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./asset/image/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- css style -->
+  <link rel="stylesheet" href="./asset/css/reset.css" />
+  <link rel="stylesheet" href="./asset/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__navigation">
+      <div class="container">
+        <div class="logo-page__group">
+          <img src="./asset/image/icon/logo-page.svg" alt="" class="logo__page" />
+          <span class="logo__text">Lucy</span>
+        </div>
+        <nav class="navbar">
+          <ul class="nav__list">
+            <li class="nav__items home">Home</li>
+            <li class="nav__items about">About</li>
+            <li class="nav__items services-rate">Services & Rates</li>
+            <li class="nav__items reviews">Reviews</li>
+            <li class="nav__items contact-us">Contact Us</li>
+          </ul>
+        </nav>
+        <div class="login">
+          <button class="login__btn btn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <section class="header__content">
+      <div class="container">
+        <div class="header__content-left">
+          <figure>
+            <img src="./asset/image/img/dog_pet-1.webp" alt="" class="header__img large" />
+          </figure>
+          <figure>
+            <img src="./asset/image/img/pet.jpg" alt="" class="header__img small" />
+          </figure>
+          <div class="header_subimg-group">
+            <div class="header_subimg-items">
+              <img src="./asset/image/img/cat.png" alt="" class="sub-img top-subimg" />
+              <h3 class="sub-title">Pet Health</h3>
+            </div>
+
+            <div class="header_subimg-items">
+              <img src="./asset/image/img/dog_pet.png" alt="" class="sub-img bottom-subimg" />
+              <h3 class="sub-title">Pet care</h3>
+            </div>
           </div>
-          <nav class="navbar">
-            <ul class="nav__list">
-              <li class="nav__items home">Home</li>
-              <li class="nav__items about">About</li>
-              <li class="nav__items services-rate">Services & Rates</li>
-              <li class="nav__items reviews">Reviews</li>
-              <li class="nav__items contact-us">Contact Us</li>
-            </ul>
-          </nav>
-          <div class="login">
-            <button class="login__btn btn">Sign Up</button>
+          <figure class="header__content-decorate decorate-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="102" viewBox="0 0 51 102" fill="none">
+              <path
+                d="M29.9381 2.1582C29.9381 1.32978 29.2665 0.658203 28.4381 0.658203C27.6097 0.658203 26.9381 1.32978 26.9381 2.1582L26.9381 28.9686C26.9381 29.7971 27.6097 30.4686 28.4381 30.4686C29.2665 30.4686 29.9381 29.7971 29.9381 28.9686L29.9381 2.1582Z"
+                fill="url(#paint0_linear_11_1245)" />
+              <path
+                d="M50.9811 2.1582C50.9811 1.32978 50.3095 0.658203 49.4811 0.658203C48.6527 0.658203 47.9811 1.32978 47.9811 2.1582L47.9811 99.9876C47.9811 100.816 48.6527 101.488 49.4811 101.488C50.3095 101.488 50.9811 100.816 50.9811 99.9876L50.9811 2.1582Z"
+                fill="url(#paint1_linear_11_1245)" />
+              <path
+                d="M28.4381 71.6777C29.2665 71.6777 29.9381 72.3493 29.9381 73.1777L29.9381 99.9882C29.9381 100.817 29.2665 101.488 28.4381 101.488C27.6097 101.488 26.9381 100.817 26.9381 99.9882L26.9381 73.1777C26.9381 72.3493 27.6097 71.6777 28.4381 71.6777Z"
+                fill="url(#paint2_linear_11_1245)" />
+              <path
+                d="M28.9454 66.7861C29.7739 66.7861 30.4454 66.1146 30.4454 65.2861C30.4454 64.4577 29.7739 63.7861 28.9454 63.7861L2.13501 63.7861C1.30658 63.7861 0.63501 64.4577 0.63501 65.2861C0.63501 66.1146 1.30658 66.7861 2.13501 66.7861H28.9454Z"
+                fill="url(#paint3_linear_11_1245)" />
+              <path
+                d="M42.4669 0.658203C43.2953 0.658203 43.9669 1.32978 43.9669 2.1582L43.9669 99.9876C43.9669 100.816 43.2953 101.488 42.4669 101.488C41.6385 101.488 40.9669 100.816 40.9669 99.9876L40.9669 2.1582C40.9669 1.32978 41.6385 0.658203 42.4669 0.658203Z"
+                fill="url(#paint4_linear_11_1245)" />
+              <path
+                d="M22.9244 2.1582C22.9244 1.32978 22.2529 0.658203 21.4244 0.658203C20.596 0.658203 19.9244 1.32978 19.9244 2.1582L19.9244 28.9686C19.9244 29.7971 20.596 30.4686 21.4244 30.4686C22.2529 30.4686 22.9244 29.7971 22.9244 28.9686L22.9244 2.1582Z"
+                fill="url(#paint5_linear_11_1245)" />
+              <path
+                d="M21.4244 71.6777C22.2529 71.6777 22.9244 72.3493 22.9244 73.1777L22.9244 99.9882C22.9244 100.817 22.2529 101.488 21.4244 101.488C20.596 101.488 19.9244 100.817 19.9244 99.9882L19.9244 73.1777C19.9244 72.3493 20.596 71.6777 21.4244 71.6777Z"
+                fill="url(#paint6_linear_11_1245)" />
+              <path
+                d="M28.9454 59.7715C29.7739 59.7715 30.4454 59.0999 30.4454 58.2715C30.4454 57.4431 29.7739 56.7715 28.9454 56.7715L2.13501 56.7715C1.30658 56.7715 0.63501 57.4431 0.63501 58.2715C0.63501 59.0999 1.30658 59.7715 2.13501 59.7715L28.9454 59.7715Z"
+                fill="url(#paint7_linear_11_1245)" />
+              <path
+                d="M30.4454 44.2441C30.4454 45.0726 29.7739 45.7441 28.9454 45.7441L2.13501 45.7441C1.30658 45.7441 0.63501 45.0726 0.63501 44.2441C0.63501 43.4157 1.30658 42.7441 2.13501 42.7441L28.9454 42.7441C29.7739 42.7441 30.4454 43.4157 30.4454 44.2441Z"
+                fill="url(#paint8_linear_11_1245)" />
+              <path
+                d="M36.9528 2.1582C36.9528 1.32978 36.2812 0.658203 35.4528 0.658203C34.6243 0.658203 33.9528 1.32978 33.9528 2.1582L33.9528 99.9876C33.9528 100.816 34.6243 101.488 35.4528 101.488C36.2812 101.488 36.9528 100.816 36.9528 99.9876L36.9528 2.1582Z"
+                fill="url(#paint9_linear_11_1245)" />
+              <path
+                d="M14.4098 0.658203C15.2382 0.658203 15.9098 1.32978 15.9098 2.1582L15.9098 28.9686C15.9098 29.7971 15.2382 30.4686 14.4098 30.4686C13.5814 30.4686 12.9098 29.7971 12.9098 28.9686L12.9098 2.1582C12.9098 1.32978 13.5814 0.658203 14.4098 0.658203Z"
+                fill="url(#paint10_linear_11_1245)" />
+              <path
+                d="M15.9098 73.1777C15.9098 72.3493 15.2382 71.6777 14.4098 71.6777C13.5814 71.6777 12.9098 72.3493 12.9098 73.1777L12.9098 99.9882C12.9098 100.817 13.5814 101.488 14.4098 101.488C15.2382 101.488 15.9098 100.817 15.9098 99.9882L15.9098 73.1777Z"
+                fill="url(#paint11_linear_11_1245)" />
+              <path
+                d="M30.4454 51.2578C30.4454 52.0862 29.7739 52.7578 28.9454 52.7578L2.13501 52.7578C1.30658 52.7578 0.63501 52.0862 0.63501 51.2578C0.63501 50.4294 1.30658 49.7578 2.13501 49.7578L28.9454 49.7578C29.7739 49.7578 30.4454 50.4294 30.4454 51.2578Z"
+                fill="url(#paint12_linear_11_1245)" />
+              <path
+                d="M28.9454 38.7295C29.7739 38.7295 30.4454 38.0579 30.4454 37.2295C30.4454 36.4011 29.7739 35.7295 28.9454 35.7295L2.13501 35.7295C1.30658 35.7295 0.63501 36.4011 0.63501 37.2295C0.63501 38.0579 1.30658 38.7295 2.13501 38.7295L28.9454 38.7295Z"
+                fill="url(#paint13_linear_11_1245)" />
+              <defs>
+                <linearGradient id="paint0_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint6_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint7_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint8_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint9_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint10_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint11_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint12_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint13_linear_11_1245" x1="46.9861" y1="26" x2="25.4861" y2="87"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD7CB" />
+                  <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </figure>
+          <figure class="header__content-decorate decorate-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="232" height="232" viewBox="0 0 232 232" fill="none">
+              <path
+                d="M51.7229 115.109C51.7229 85.4309 75.7818 61.3721 105.46 61.3721C135.138 61.3721 159.197 85.4309 159.197 115.109C159.197 115.937 159.868 116.609 160.697 116.609C161.525 116.609 162.197 115.937 162.197 115.109C162.197 83.7741 136.795 58.3721 105.46 58.3721C74.1249 58.3721 48.7229 83.7741 48.7229 115.109C48.7229 118.961 49.1071 122.726 49.8396 126.365C50.0031 127.177 50.794 127.703 51.6061 127.539C52.4183 127.376 52.9441 126.585 52.7806 125.773C52.0871 122.327 51.7229 118.761 51.7229 115.109Z"
+                fill="url(#paint0_linear_11_1244)" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M112.035 40.8369C69.8053 40.8369 35.571 75.0712 35.571 117.301C35.571 159.532 69.8053 193.766 112.035 193.766C154.266 193.766 188.5 159.532 188.5 117.301C188.5 75.0712 154.266 40.8369 112.035 40.8369ZM38.571 117.301C38.571 76.7281 71.4622 43.8369 112.035 43.8369C152.609 43.8369 185.5 76.7281 185.5 117.301C185.5 157.875 152.609 190.766 112.035 190.766C71.4622 190.766 38.571 157.875 38.571 117.301Z"
+                fill="url(#paint1_linear_11_1244)" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.7893 116.863C19.7893 65.6744 61.2857 24.178 112.474 24.178C163.663 24.178 205.159 65.6744 205.159 116.863C205.159 168.051 163.663 209.548 112.474 209.548C61.2857 209.548 19.7893 168.051 19.7893 116.863ZM112.474 27.178C62.9426 27.178 22.7893 67.3313 22.7893 116.863C22.7893 166.394 62.9426 206.548 112.474 206.548C162.006 206.548 202.159 166.394 202.159 116.863C202.159 67.3313 162.006 27.178 112.474 27.178Z"
+                fill="url(#paint2_linear_11_1244)" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M115.981 0.503906C52.2026 0.503906 0.5 52.2065 0.5 115.985C0.5 179.763 52.2026 231.466 115.981 231.466C179.759 231.466 231.462 179.763 231.462 115.985C231.462 52.2065 179.759 0.503906 115.981 0.503906ZM3.5 115.985C3.5 53.8634 53.8595 3.50391 115.981 3.50391C178.103 3.50391 228.462 53.8634 228.462 115.985C228.462 178.107 178.103 228.466 115.981 228.466C53.8595 228.466 3.5 178.107 3.5 115.985Z"
+                fill="url(#paint3_linear_11_1244)" />
+              <defs>
+                <linearGradient id="paint0_linear_11_1244" x1="115.981" y1="0.503906" x2="115.981" y2="231.466"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF9771" stop-opacity="0.84" />
+                  <stop offset="0.954425" stop-color="#FF9771" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_11_1244" x1="115.981" y1="0.503906" x2="115.981" y2="231.466"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF9771" stop-opacity="0.84" />
+                  <stop offset="0.954425" stop-color="#FF9771" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_11_1244" x1="115.981" y1="0.503906" x2="115.981" y2="231.466"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF9771" stop-opacity="0.84" />
+                  <stop offset="0.954425" stop-color="#FF9771" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_11_1244" x1="115.981" y1="0.503906" x2="115.981" y2="231.466"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF9771" stop-opacity="0.84" />
+                  <stop offset="0.954425" stop-color="#FF9771" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </figure>
+        </div>
+        <section class="header__content-right">
+          <h2 class="header__title">
+            Established & Trusted Pet Care Service
+          </h2>
+          <p class="header__desc">
+            Discover a wide variety of Pawsitive services to choose from,
+            including daycare, private walks, office duty and spa.
+          </p>
+          <div class="header__group-btn">
+            <button class="header__btn">
+              <a href="#!" class="header__btn-link">Book a Meet</a>
+              <div class="header__arrow-right">
+                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.48584 0.5L3.98584 3L1.48584 5.5" stroke="#FD5056" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </button>
+            <a href="#!" class="header__link">Schedule a Call</a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="about">
+      <div class="container">
+        <div class="about__body">
+          <section class="about__content">
+            <p class="about__label">// About //</p>
+            <h2 class="about__title">Best Agency For Your Pet.</h2>
+            <p class="about__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="about__check-list">
+              <span class="about__check-items">Certified Groomer</span>
+              <span class="about__check-items">Animal Lover</span><span class="about__check-items">14+ Years
+                Experience</span><span class="about__check-items">Pet Parent Of 3 Dogs</span>
+            </div>
+          </section>
+          <div class="about__media">
+            <div class="about__card">
+              <b class="about__card--title">
+                20+
+              </b>
+              <p class="about__card-desc ">
+                Years Experience
+              </p>
+              <img src="./asset/image/icon/decorate_cat.svg" alt="" class="about__card--decorate">
+            </div>
+            <figure class="about__img--wrap about__wrap--top">
+              <img src="./asset/image/img/about_people_cat.svg" alt="" class="about__image">
+            </figure>
+
+          </div>
+          <div class="about__media">
+            <figure class="about__img--wrap about__wrap--bottom">
+              <img src="./asset/image/img/dog__media.svg" alt="" class="about__image image__bottom">
+              <div>
+                <img src="./asset/image/icon/decorate-1.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-2.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-3.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-4.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-5.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+                <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
+              </div>
+            </figure>
+          </div>
+          <section class="about__content">
+            <h2 class="about__title">Taking A Vacation?
+              So Is Your Pet.</h2>
+            <p class="about__desc about__desc--top">
+              We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily
+              individual time in our large play yard.
+            </p>
+            <div class="about__list">
+              <div class="about__items">
+                <img src="./asset/image/icon/house_pet.svg" alt="" class="about__items--img">
+                <span class="about__items--lable">Pet Boarding</span>
+              </div>
+              <div class="about__items">
+                <img src="./asset/image/icon/pet_daycare.svg" alt="" class="about__items--img">
+                <span class="about__items--lable">Pet Daycare</span>
+              </div>
+              <div class="about__items">
+                <img src="./asset/image/icon/pet_transport.svg" alt="" class="about__items--img">
+                <span class="about__items--lable">Pet Transport</span>
+              </div>
+            </div>
+            <p class="about__desc about__desc--bottom">
+              While you're on holiday, here's where your furry friends will spend their time.
+            </p>
+            <a href="#!" class="about__link">View more</a>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <div class="service__body">
+          <span class="service__lable">What we do for you?</span>
+          <h2 class="service__title">Our Services</h2>
+          <div class="service__block">
+            <section class="service__items">
+              <h3 class="service__sub-title">Puppy Sitting</h3>
+              <p class="service__sub-desc">Helping your new pup to be a good boy or girl isn’t always easy, but we’re
+                here to help.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read More</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+            <figure class="service__items">
+              <img src="./asset/image/img/meo__de__thuong (1).png" alt="cat img" class="service__items--img">
+            </figure>
+            <section class="service__items">
+              <h3 class="service__sub-title">
+                Overnight Care
+              </h3>
+              <p class="service__sub-desc">If you’re away for the night, we can stay the night or stop by in the evening
+                and morning.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read more</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+
+            <section class="service__items">
+              <h3 class="service__sub-title">Dog Walking</h3>
+              <p class="service__sub-desc">Choose from a 30, 45, or 60-minute visit to give your pet their daily dose of
+                fun-filled.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read more</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+            <section class="service__items">
+              <h3 class="service__sub-title">Pet Taxi</h3>
+              <p class="service__sub-desc">Does your pet need a lift to the groomers, vet, or dog park? We’ve got their
+                tail covered.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read more</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+            <section class="service__items">
+              <h3 class="service__sub-title">Pet Sitting</h3>
+              <p class="service__sub-desc">While you’re away we can make sure your pet has all the food, water,
+                exercise, and, of course.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read more</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+            <section class="service__items">
+              <h3 class="service__sub-title">Pet Medical Admin</h3>
+              <p class="service__sub-desc">Our team of experienced professionals can help with everything from pills to
+                injections.</p>
+              <span href="#!" class="service__sub-link">
+                <span class="service__sub-link--text">Read more</span>
+                <svg class="service__sub-link--icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L9 3" stroke="#ff5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </a>
+            </section>
+            <a href="#1" class="service__items">View All Services</a>
           </div>
         </div>
       </div>
-      <section class="header__content">
-        <div class="container">
-          <div class="header__content-left">
-            <figure>
-              <img
-                src="./asset/image/img/dog_pet-1.webp"
-                alt=""
-                class="header__img large"
-              />
-            </figure>
-            <figure>
-              <img
-                src="./asset/image/img/pet.jpg"
-                alt=""
-                class="header__img small"
-              />
-            </figure>
-            <div class="header_subimg-group">
-              <div class="header_subimg-items">
-                <img
-                  src="./asset/image/img/cat.png"
-                  alt=""
-                  class="sub-img top-subimg"
-                />
-                <h3 class="sub-title">Pet Health</h3>
-              </div>
-
-              <div class="header_subimg-items">
-                <img
-                  src="./asset/image/img/dog_pet.png"
-                  alt=""
-                  class="sub-img bottom-subimg"
-                />
-                <h3 class="sub-title">Pet care</h3>
-              </div>
+    </section>
+    <section class="meeting">
+      <div class="container">
+        <div class="meeting__body">
+          <span class="meeting__lable">Pet Care Staff</span>
+          <h2 class="meeting__title">Meet Our Groomers</h2>
+          <div class="meeting__list">
+            <div class="meeting__items">
+              <figure><img src="./asset/image/img/image_85.svg" alt="avatar" class="meeting__thumb"></figure>
+              <span class="meeting__sub-trade">Pet Trainer</span>
+              <p class="meeting__sub-name">
+                <strong>Meghan Samit</strong>
+              </p>
             </div>
-            <figure class="header__content-decorate decorate-right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="51"
-                height="102"
-                viewBox="0 0 51 102"
-                fill="none"
-              >
-                <path
-                  d="M29.9381 2.1582C29.9381 1.32978 29.2665 0.658203 28.4381 0.658203C27.6097 0.658203 26.9381 1.32978 26.9381 2.1582L26.9381 28.9686C26.9381 29.7971 27.6097 30.4686 28.4381 30.4686C29.2665 30.4686 29.9381 29.7971 29.9381 28.9686L29.9381 2.1582Z"
-                  fill="url(#paint0_linear_11_1245)"
-                />
-                <path
-                  d="M50.9811 2.1582C50.9811 1.32978 50.3095 0.658203 49.4811 0.658203C48.6527 0.658203 47.9811 1.32978 47.9811 2.1582L47.9811 99.9876C47.9811 100.816 48.6527 101.488 49.4811 101.488C50.3095 101.488 50.9811 100.816 50.9811 99.9876L50.9811 2.1582Z"
-                  fill="url(#paint1_linear_11_1245)"
-                />
-                <path
-                  d="M28.4381 71.6777C29.2665 71.6777 29.9381 72.3493 29.9381 73.1777L29.9381 99.9882C29.9381 100.817 29.2665 101.488 28.4381 101.488C27.6097 101.488 26.9381 100.817 26.9381 99.9882L26.9381 73.1777C26.9381 72.3493 27.6097 71.6777 28.4381 71.6777Z"
-                  fill="url(#paint2_linear_11_1245)"
-                />
-                <path
-                  d="M28.9454 66.7861C29.7739 66.7861 30.4454 66.1146 30.4454 65.2861C30.4454 64.4577 29.7739 63.7861 28.9454 63.7861L2.13501 63.7861C1.30658 63.7861 0.63501 64.4577 0.63501 65.2861C0.63501 66.1146 1.30658 66.7861 2.13501 66.7861H28.9454Z"
-                  fill="url(#paint3_linear_11_1245)"
-                />
-                <path
-                  d="M42.4669 0.658203C43.2953 0.658203 43.9669 1.32978 43.9669 2.1582L43.9669 99.9876C43.9669 100.816 43.2953 101.488 42.4669 101.488C41.6385 101.488 40.9669 100.816 40.9669 99.9876L40.9669 2.1582C40.9669 1.32978 41.6385 0.658203 42.4669 0.658203Z"
-                  fill="url(#paint4_linear_11_1245)"
-                />
-                <path
-                  d="M22.9244 2.1582C22.9244 1.32978 22.2529 0.658203 21.4244 0.658203C20.596 0.658203 19.9244 1.32978 19.9244 2.1582L19.9244 28.9686C19.9244 29.7971 20.596 30.4686 21.4244 30.4686C22.2529 30.4686 22.9244 29.7971 22.9244 28.9686L22.9244 2.1582Z"
-                  fill="url(#paint5_linear_11_1245)"
-                />
-                <path
-                  d="M21.4244 71.6777C22.2529 71.6777 22.9244 72.3493 22.9244 73.1777L22.9244 99.9882C22.9244 100.817 22.2529 101.488 21.4244 101.488C20.596 101.488 19.9244 100.817 19.9244 99.9882L19.9244 73.1777C19.9244 72.3493 20.596 71.6777 21.4244 71.6777Z"
-                  fill="url(#paint6_linear_11_1245)"
-                />
-                <path
-                  d="M28.9454 59.7715C29.7739 59.7715 30.4454 59.0999 30.4454 58.2715C30.4454 57.4431 29.7739 56.7715 28.9454 56.7715L2.13501 56.7715C1.30658 56.7715 0.63501 57.4431 0.63501 58.2715C0.63501 59.0999 1.30658 59.7715 2.13501 59.7715L28.9454 59.7715Z"
-                  fill="url(#paint7_linear_11_1245)"
-                />
-                <path
-                  d="M30.4454 44.2441C30.4454 45.0726 29.7739 45.7441 28.9454 45.7441L2.13501 45.7441C1.30658 45.7441 0.63501 45.0726 0.63501 44.2441C0.63501 43.4157 1.30658 42.7441 2.13501 42.7441L28.9454 42.7441C29.7739 42.7441 30.4454 43.4157 30.4454 44.2441Z"
-                  fill="url(#paint8_linear_11_1245)"
-                />
-                <path
-                  d="M36.9528 2.1582C36.9528 1.32978 36.2812 0.658203 35.4528 0.658203C34.6243 0.658203 33.9528 1.32978 33.9528 2.1582L33.9528 99.9876C33.9528 100.816 34.6243 101.488 35.4528 101.488C36.2812 101.488 36.9528 100.816 36.9528 99.9876L36.9528 2.1582Z"
-                  fill="url(#paint9_linear_11_1245)"
-                />
-                <path
-                  d="M14.4098 0.658203C15.2382 0.658203 15.9098 1.32978 15.9098 2.1582L15.9098 28.9686C15.9098 29.7971 15.2382 30.4686 14.4098 30.4686C13.5814 30.4686 12.9098 29.7971 12.9098 28.9686L12.9098 2.1582C12.9098 1.32978 13.5814 0.658203 14.4098 0.658203Z"
-                  fill="url(#paint10_linear_11_1245)"
-                />
-                <path
-                  d="M15.9098 73.1777C15.9098 72.3493 15.2382 71.6777 14.4098 71.6777C13.5814 71.6777 12.9098 72.3493 12.9098 73.1777L12.9098 99.9882C12.9098 100.817 13.5814 101.488 14.4098 101.488C15.2382 101.488 15.9098 100.817 15.9098 99.9882L15.9098 73.1777Z"
-                  fill="url(#paint11_linear_11_1245)"
-                />
-                <path
-                  d="M30.4454 51.2578C30.4454 52.0862 29.7739 52.7578 28.9454 52.7578L2.13501 52.7578C1.30658 52.7578 0.63501 52.0862 0.63501 51.2578C0.63501 50.4294 1.30658 49.7578 2.13501 49.7578L28.9454 49.7578C29.7739 49.7578 30.4454 50.4294 30.4454 51.2578Z"
-                  fill="url(#paint12_linear_11_1245)"
-                />
-                <path
-                  d="M28.9454 38.7295C29.7739 38.7295 30.4454 38.0579 30.4454 37.2295C30.4454 36.4011 29.7739 35.7295 28.9454 35.7295L2.13501 35.7295C1.30658 35.7295 0.63501 36.4011 0.63501 37.2295C0.63501 38.0579 1.30658 38.7295 2.13501 38.7295L28.9454 38.7295Z"
-                  fill="url(#paint13_linear_11_1245)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint1_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint2_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint3_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint4_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint5_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint6_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint7_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint8_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint9_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint10_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint11_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint12_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint13_linear_11_1245"
-                    x1="46.9861"
-                    y1="26"
-                    x2="25.4861"
-                    y2="87"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FFD7CB" />
-                    <stop offset="1" stop-color="#FFD7CB" stop-opacity="0" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </figure>
-            <figure class="header__content-decorate decorate-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="232"
-                height="232"
-                viewBox="0 0 232 232"
-                fill="none"
-              >
-                <path
-                  d="M51.7229 115.109C51.7229 85.4309 75.7818 61.3721 105.46 61.3721C135.138 61.3721 159.197 85.4309 159.197 115.109C159.197 115.937 159.868 116.609 160.697 116.609C161.525 116.609 162.197 115.937 162.197 115.109C162.197 83.7741 136.795 58.3721 105.46 58.3721C74.1249 58.3721 48.7229 83.7741 48.7229 115.109C48.7229 118.961 49.1071 122.726 49.8396 126.365C50.0031 127.177 50.794 127.703 51.6061 127.539C52.4183 127.376 52.9441 126.585 52.7806 125.773C52.0871 122.327 51.7229 118.761 51.7229 115.109Z"
-                  fill="url(#paint0_linear_11_1244)"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M112.035 40.8369C69.8053 40.8369 35.571 75.0712 35.571 117.301C35.571 159.532 69.8053 193.766 112.035 193.766C154.266 193.766 188.5 159.532 188.5 117.301C188.5 75.0712 154.266 40.8369 112.035 40.8369ZM38.571 117.301C38.571 76.7281 71.4622 43.8369 112.035 43.8369C152.609 43.8369 185.5 76.7281 185.5 117.301C185.5 157.875 152.609 190.766 112.035 190.766C71.4622 190.766 38.571 157.875 38.571 117.301Z"
-                  fill="url(#paint1_linear_11_1244)"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M19.7893 116.863C19.7893 65.6744 61.2857 24.178 112.474 24.178C163.663 24.178 205.159 65.6744 205.159 116.863C205.159 168.051 163.663 209.548 112.474 209.548C61.2857 209.548 19.7893 168.051 19.7893 116.863ZM112.474 27.178C62.9426 27.178 22.7893 67.3313 22.7893 116.863C22.7893 166.394 62.9426 206.548 112.474 206.548C162.006 206.548 202.159 166.394 202.159 116.863C202.159 67.3313 162.006 27.178 112.474 27.178Z"
-                  fill="url(#paint2_linear_11_1244)"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M115.981 0.503906C52.2026 0.503906 0.5 52.2065 0.5 115.985C0.5 179.763 52.2026 231.466 115.981 231.466C179.759 231.466 231.462 179.763 231.462 115.985C231.462 52.2065 179.759 0.503906 115.981 0.503906ZM3.5 115.985C3.5 53.8634 53.8595 3.50391 115.981 3.50391C178.103 3.50391 228.462 53.8634 228.462 115.985C228.462 178.107 178.103 228.466 115.981 228.466C53.8595 228.466 3.5 178.107 3.5 115.985Z"
-                  fill="url(#paint3_linear_11_1244)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_11_1244"
-                    x1="115.981"
-                    y1="0.503906"
-                    x2="115.981"
-                    y2="231.466"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FF9771" stop-opacity="0.84" />
-                    <stop
-                      offset="0.954425"
-                      stop-color="#FF9771"
-                      stop-opacity="0"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint1_linear_11_1244"
-                    x1="115.981"
-                    y1="0.503906"
-                    x2="115.981"
-                    y2="231.466"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FF9771" stop-opacity="0.84" />
-                    <stop
-                      offset="0.954425"
-                      stop-color="#FF9771"
-                      stop-opacity="0"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint2_linear_11_1244"
-                    x1="115.981"
-                    y1="0.503906"
-                    x2="115.981"
-                    y2="231.466"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FF9771" stop-opacity="0.84" />
-                    <stop
-                      offset="0.954425"
-                      stop-color="#FF9771"
-                      stop-opacity="0"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint3_linear_11_1244"
-                    x1="115.981"
-                    y1="0.503906"
-                    x2="115.981"
-                    y2="231.466"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#FF9771" stop-opacity="0.84" />
-                    <stop
-                      offset="0.954425"
-                      stop-color="#FF9771"
-                      stop-opacity="0"
-                    />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </figure>
+            <div class="meeting__items">
+              <figure><img src="./asset/image/img/avatar2.png" alt="avatar" class="meeting__thumb"></figure>
+              <span class="meeting__sub-trade">Veterinarian</span>
+              <p class="meeting__sub-name">
+                <strong>Alissa Silva</strong>
+              </p>
+            </div>
+            <div class="meeting__items">
+              <figure><img src="./asset/image/img/avatar3.png" alt="avatar" class="meeting__thumb"></figure>
+              <span class="meeting__sub-trade">Veterinarian</span>
+              <p class="meeting__sub-name">
+                <strong>Cindy Harris</strong>
+              </p>
+            </div>
+            <div class="meeting__items">
+              <figure><img src="./asset/image/img/avatar4.png" alt="avatar" class="meeting__thumb"></figure>
+              <span class="meeting__sub-trade">Animal Caretaker</span>
+              <p class="meeting__sub-name">
+                <strong>Lucas Tony</strong>
+              </p>
+            </div>
           </div>
-          <section class="header__content-right">
-            <h2 class="header__title">
-              Established & Trusted Pet Care Service
-            </h2>
-            <p class="header__desc">
-              Discover a wide variety of Pawsitive services to choose from,
-              including daycare, private walks, office duty and spa.
-            </p>
-            <div class="header__group-btn">
-              <button class="header__btn">
-                <a href="#!" class="header__btn-link">Book a Meet</a>
-                <div class="header__arrow-right">
-                  <svg
-                    width="5"
-                    height="6"
-                    viewBox="0 0 5 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.48584 0.5L3.98584 3L1.48584 5.5"
-                      stroke="#FD5056"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </button>
-              <a href="#!" class="header__link">Schedule a Call</a>
+          <a href="#!" class="meeting__btn">View All Team</a>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing__body">
+          <h2 class="pricing__title">The Best Choice</h2>
+          <p class="pricing__desc">
+            We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily
+            individual time in our large play yard.
+          </p>
+          <div class="pricing__wrap">
+            <div class="pricing__inner">
+              <div class="pricing__switch">
+                <input type="checkbox" name="" id="pricing-switch" class="pricing__switch-input" hidden>
+                <label for="pricing-switch" class="pricing__switch--label">
+                  <span class="pricing__switch--value">Monthly</span>
+                  <span class="pricing__switch--value">Yearly</span>
+                </label>
+              </div>
+              <img src="./asset/image/icon/save_switch.svg" alt="save 15%" class="pricing__img-save">
             </div>
+          </div>
+          <div class="pricing__list">
+            <!-- items 1 -->
+            <article class="pricing__items">
+              <p class="pricing__items-type">Basic</p>
+              <h3 class="pricing__items-title">Day care</h3>
+              <p class="pricing__items-price">$150</p>
+              <button class="pricing__items-btn">Purchase Now</button>
+              <ul class="pricing__items-list">
+                <li class="pricing__items-items">Single room</li>
+                <li class="pricing__items-items">Socialist Exercise</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Spa and Grooming</li>
+                <li class="pricing__items-items">Excercise 2x</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- items 2 -->
+            <article class="pricing__items">
+              <p class="pricing__items-type">Exclusive</p>
+              <h3 class="pricing__items-title">2X Care</h3>
+              <p class="pricing__items-price">$199</p>
+              <button class="pricing__items-btn">Purchase Now</button>
+              <ul class="pricing__items-list">
+                <li class="pricing__items-items">Single room</li>
+                <li class="pricing__items-items">Socialist Exercise</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Spa and Grooming</li>
+                <li class="pricing__items-items">Excercise 2x</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- items 3 -->
+            <article class="pricing__items">
+              <p class="pricing__items-type">Platinum</p>
+              <h3 class="pricing__items-title">4X Care</h3>
+              <p class="pricing__items-price">$299</p>
+              <button class="pricing__items-btn">Purchase Now</button>
+              <ul class="pricing__items-list">
+                <li class="pricing__items-items">Single room</li>
+                <li class="pricing__items-items">Socialist Exercise</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Spa and Grooming</li>
+                <li class="pricing__items-items">Excercise 2x</li>
+                <li class="pricing__items-items">Custom Meals</li>
+                <li class="pricing__items-items">Grooming 2x</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <div class="review__inner">
+          <button class="review__control">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.875 10.9985H3.125" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M8.75 5.37354L3.125 10.9985L8.75 16.6235" stroke="currentcolor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <article class="review__content">
+            <div class="review__list">
+              <article class="review__items">
+                <figure class="review__media">
+                  <img src="./asset/image/img/review-01.png" alt="review image" class="review__media-img">
+                </figure>
+                <section class="review__items-content">
+                  <h2 class="review__items-title">Our Reviews</h2>
+                  <blockquiot class="review__items-quiot">
+                    “It was very comforting to recieve a text and pics each day about our pets and how they were doing.
+                    It was also nice that my pets were in the comfortable environment of their own home and received
+                    playfull attention from our pet sitters as well. Thanks so much!”
+                  </blockquiot>
+                  <p class="review__items-author">Karla Deras</p>
+                </section>
+              </article>
+              <article class="review__items">
+                <figure class="review__media">
+                  <img src="./asset/image/img/review-01.png" alt="review image" class="review__media-img">
+                </figure>
+                <section class="review__items-content">
+                  <h2 class="review__items-title">Our Reviews</h2>
+                  <blockquiot class="review__items-quiot">
+                    “It was very comforting to recieve a text and pics each day about our pets and how they were doing.
+                    It was also nice that my pets were in the comfortable environment of their own home and received
+                    playfull attention from our pet sitters as well. Thanks so much!”
+                  </blockquiot>
+                  <p class="review__items-author">Karla Deras</p>
+                </section>
+              </article>
+              <article class="review__items">
+                <figure class="review__media">
+                  <img src="./asset/image/img/review-01.png" alt="review image" class="review__media-img">
+                </figure>
+                <section class="review__items-content">
+                  <h2 class="review__items-title">Our Reviews</h2>
+                  <blockquiot class="review__items-quiot">
+                    “It was very comforting to recieve a text and pics each day about our pets and how they were doing.
+                    It was also nice that my pets were in the comfortable environment of their own home and received
+                    playfull attention from our pet sitters as well. Thanks so much!”
+                  </blockquiot>
+                  <p class="review__items-author">Karla Deras</p>
+                </section>
+              </article>
+            </div>
+            <div class="review__dots">
+              <div class="review__dot "></div>
+              <div class="review__dot review__dot--active"></div>
+              <div class="review__dot"></div>
+              <div class="review__dot"></div>
+            </div>
+          </article>
+          <button class="review__control">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.125 10.9985H16.875" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M11.25 5.37354L16.875 10.9985L11.25 16.6235" stroke="currentcolor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__heading">
+          <h2 class="blog__heading--title">
+            Our Blog
+          </h2>
+          <div class="blog__heading--inner">
+            <p class="blog__heading--desc">
+              Stay up to date with the latest tech trands and news in the pets.
+            </p>
+            <button class="blog__heading--btn">
+              View All Blog
+            </button>
+          </div>
+        </div>
+        <div class="blog__list">
+          <section class="blog__items">
+            <div class="blog__items--inner">
+              <p class="blog__items--date">21 june 2021</p>
+              <figure class="blog__items--media">
+                <img src="./asset/image/img/blog_item_pet.jpg" alt="" class="blog__items--image">
+              </figure>
+            </div>
+            <h3 class="blog__items--title">Building Bonds and Trusting Relationships with Your Pets.</h3>
+            <p class="blog__items--desc">There isn’t a relationship around that can survive without trust. My
+              relationship with my dog Peyton is deep...</p>
+          </section>
+          <section class="blog__items">
+            <div class="blog__items--inner">
+              <p class="blog__items--date">28 june 2021</p>
+              <figure class="blog__items--media">
+                <img src="./asset/image/img/blog_item_pet-02.jpg" alt="" class="blog__items--image">
+              </figure>
+            </div>
+            <h3 class="blog__items--title">Celebrity pet photographer Grace Chon on taking ...</h3>
+            <p class="blog__items--desc">Doting pet parents have a relentless need to constantly photograph every
+              adorable pet moment...</p>
+          </section>
+          <section class="blog__items">
+            <div class="blog__items--inner">
+              <p class="blog__items--date">10 july 2021</p>
+              <figure class="blog__items--media">
+                <img src="./asset/image/img/blog_item_pet-03.jpg" alt="" class="blog__items--image">
+              </figure>
+            </div>
+            <h3 class="blog__items--title">5 Simple Tricks To Create A More Conscious ...</h3>
+            <p class="blog__items--desc">It is easy to forget that animals are living creatures with a beating heart.
+            </p>
           </section>
         </div>
-      </section>
-    </header>
-    <main>
-      <section class="about">
-        <div class="container">
-          <div class="about__body">
-            <section class="about__content">
-              <p class="about__label">// About //</p>
-              <h2 class="about__title">Best Agency For Your Pet.</h2>
-              <p class="about__desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="about__check-list">
-                <span class="about__check-items">Certified Groomer</span>
-                <span class="about__check-items">Animal Lover</span
-                ><span class="about__check-items">14+ Years Experience</span
-                ><span class="about__check-items">Pet Parent Of 3 Dogs</span>
-              </div>
-            </section>
-            <div class="about__media">
-              <div class="about__card">
-                 <b class="about__card--title">
-                  20+
-                 </b>
-                 <p class="about__card-desc ">
-                  Years Experience
-                 </p>
-                 <img src="./asset/image/icon/decorate_cat.svg" alt="" class="about__card--decorate">
-              </div>
-              <figure class="about__img--wrap about__wrap--top">
-                <img src="./asset/image/img/about_people_cat.svg" alt="" class="about__image">
-              </figure>
-
-            </div>
-            <div class="about__media">
-              <figure class="about__img--wrap about__wrap--bottom">
-                <img src="./asset/image/img/dog__media.svg" alt="" class="about__image image__bottom">
-                <div >
-                  <img src="./asset/image/icon/decorate-1.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-2.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-3.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-4.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-5.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
-                  <img src="./asset/image/icon/decorate-6.svg" alt="" class="about__image-decor">
-                </div>
-              </figure>
-            </div>
-            <section class="about__content">
-              <h2 class="about__title">Taking A Vacation?
-                So Is Your Pet.</h2>
-              <p class="about__desc desc__bottom">
-                We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.
-              </p>
-            </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <div class="logo-page__group">
+            <img src="./asset/image/icon/logo-page.svg" alt="" class="logo__page" />
+            <span class="logo__text">Lucy</span>
+          </div>
+          <form action="" class="footer__form">
+            <input type="" name="" id="" placeholder="Enter your email" class="footer__form--input">
+            <button class="footer__subscribe--submit"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.8125 9.00195H15.1875" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M10.125 3.93945L15.1875 9.00195L10.125 14.0645" stroke="currentcolor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+          <h3 class="footer__social--title">Follow Us</h3>
+          <div class="social__list">
+            <a href="" class="social__items"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7"
+                  d="M12.4444 0H1.55556C0.7 0 0 0.7 0 1.55556V12.4444C0 13.3008 0.7 14 1.55556 14H7V8.55556H5.44444V6.63056H7V5.03611C7 3.353 7.94267 2.17078 9.92911 2.17078L11.3314 2.17233V4.19844H10.4004C9.62733 4.19844 9.33333 4.77867 9.33333 5.31689V6.63133H11.3307L10.8889 8.55556H9.33333V14H12.4444C13.3 14 14 13.3008 14 12.4444V1.55556C14 0.7 13.3 0 12.4444 0Z"
+                  fill="#000958" />
+              </svg>
+            </a>
+            <a href="" class="social__items">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7"
+                  d="M4.58338 11.9998C5.70216 12.007 6.8112 11.7889 7.84618 11.3583C8.88116 10.9277 9.82148 10.2931 10.6126 9.49132C11.4037 8.68956 12.0299 7.73659 12.4548 6.68769C12.8797 5.63878 13.0948 4.51481 13.0878 3.38098V2.98494C13.6677 2.55432 14.1697 2.02517 14.5714 1.42093C14.0253 1.66298 13.4475 1.82351 12.856 1.89751C13.4831 1.51878 13.9537 0.922635 14.1806 0.219387C13.5962 0.574774 12.9552 0.82461 12.2864 0.957762C11.8359 0.471352 11.2399 0.148943 10.5904 0.0404223C9.94098 -0.0680986 9.27434 0.0433178 8.69367 0.357432C8.113 0.671547 7.65065 1.17085 7.37818 1.77808C7.10571 2.38531 7.03829 3.06663 7.18636 3.7166C5.99815 3.65749 4.83554 3.34541 3.77424 2.80068C2.71294 2.25595 1.77675 1.49079 1.02662 0.555012C0.648377 1.22034 0.533729 2.00647 0.705893 2.75424C0.878056 3.50202 1.32417 4.15555 1.9539 4.58251C1.48934 4.56436 1.03553 4.43558 0.629221 4.20661V4.24018C0.625093 4.93548 0.856218 5.61122 1.28408 6.15476C1.71193 6.69831 2.31068 7.07683 2.98052 7.22724C2.54844 7.34502 2.09583 7.36337 1.65584 7.28094C1.84977 7.87391 2.21995 8.39157 2.71562 8.76292C3.21128 9.13426 3.80817 9.34111 4.42442 9.3551C3.37078 10.2147 2.06126 10.6878 0.708701 10.6976C0.471554 10.6906 0.234962 10.6705 0 10.6372C1.36902 11.5212 2.96012 11.9872 4.58338 11.9797"
+                  fill="#000958" />
+              </svg>
+            </a>
+            <a href="" class="social__items">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7"
+                  d="M13.2222 0H0.777778C0.571498 0 0.373667 0.0819442 0.227806 0.227806C0.0819442 0.373667 0 0.571498 0 0.777778V13.2222C0 13.4285 0.0819442 13.6263 0.227806 13.7722C0.373667 13.9181 0.571498 14 0.777778 14H13.2222C13.4285 14 13.6263 13.9181 13.7722 13.7722C13.9181 13.6263 14 13.4285 14 13.2222V0.777778C14 0.571498 13.9181 0.373667 13.7722 0.227806C13.6263 0.0819442 13.4285 0 13.2222 0ZM4.15256 11.9288H2.07433V5.24767H4.15256V11.9288ZM3.11344 4.33533C2.79412 4.33533 2.48788 4.20848 2.26209 3.98269C2.03629 3.7569 1.90944 3.45065 1.90944 3.13133C1.90944 2.81201 2.03629 2.50577 2.26209 2.27998C2.48788 2.05418 2.79412 1.92733 3.11344 1.92733C3.43277 1.92733 3.73901 2.05418 3.9648 2.27998C4.19059 2.50577 4.31744 2.81201 4.31744 3.13133C4.31744 3.45065 4.19059 3.7569 3.9648 3.98269C3.73901 4.20848 3.43277 4.33533 3.11344 4.33533ZM11.9296 11.9288H9.85367V8.68C9.85367 7.90533 9.83967 6.909 8.77411 6.909C7.693 6.909 7.52889 7.75367 7.52889 8.62556V11.9296H5.45456V5.24844H7.44567V6.16156H7.47444C7.75056 5.63656 8.42878 5.08278 9.43756 5.08278C11.5407 5.08278 11.9288 6.46567 11.9288 8.26544V11.9288H11.9296Z"
+                  fill="#000958" />
+              </svg>
+            </a>
+            <a href="" class="social__items"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7 0C5.0988 0 4.8608 0.00839996 4.1139 0.042C3.3691 0.0763 2.8602 0.1946 2.415 0.3675C1.94774 0.543091 1.52443 0.818532 1.1746 1.1746C0.818549 1.52444 0.543112 1.94775 0.3675 2.415C0.1946 2.8602 0.0763 3.3691 0.042 4.1139C0.00769996 4.8608 0 5.0988 0 7C0 8.9012 0.00769996 9.1392 0.042 9.8861C0.0763 10.6309 0.1946 11.1398 0.3675 11.585C0.543132 12.0522 0.818567 12.4755 1.1746 12.8254C1.52446 13.1814 1.94776 13.4569 2.415 13.6325C2.8602 13.8054 3.3691 13.9237 4.1139 13.958C4.8608 13.9916 5.0988 14 7 14C8.9012 14 9.1392 13.9916 9.8861 13.958C10.6309 13.9237 11.1398 13.8054 11.585 13.6325C12.0522 13.4569 12.4756 13.1815 12.8254 12.8254C13.1815 12.4756 13.4569 12.0522 13.6325 11.585C13.8054 11.1398 13.9237 10.6309 13.958 9.8861C13.9916 9.1392 14 8.9012 14 7C14 5.0988 13.9916 4.8608 13.958 4.1139C13.9237 3.3691 13.8054 2.8602 13.6325 2.415C13.4569 1.94775 13.1815 1.52444 12.8254 1.1746C12.4756 0.818532 12.0523 0.543091 11.585 0.3675C11.1398 0.1946 10.6309 0.0763 9.8861 0.042C9.1392 0.00839996 8.9012 0 7 0ZM7 1.2614C8.869 1.2614 9.0902 1.2684 9.828 1.302C10.5112 1.3335 10.8815 1.4469 11.1286 1.5428C11.4548 1.6702 11.6886 1.8221 11.9336 2.0664C12.1786 2.3114 12.3298 2.5452 12.4572 2.8714C12.5524 3.1185 12.6672 3.4888 12.698 4.1713C12.7316 4.9098 12.7386 5.1303 12.7386 7C12.7386 8.869 12.7316 9.0902 12.698 9.828C12.6665 10.5112 12.5524 10.8815 12.4572 11.1286C12.345 11.4327 12.1661 11.7077 11.9336 11.9336C11.6886 12.1786 11.4548 12.3298 11.1286 12.4572C10.8815 12.5524 10.5112 12.6672 9.8287 12.698C9.0909 12.7316 8.8697 12.7386 7 12.7386C5.131 12.7386 4.9091 12.7316 4.172 12.698C3.4888 12.6665 3.1185 12.5524 2.8714 12.4572C2.56731 12.345 2.29223 12.1661 2.0664 11.9336C1.8339 11.7078 1.65498 11.4327 1.5428 11.1286C1.4469 10.8815 1.3328 10.5112 1.302 9.8287C1.2684 9.0902 1.2614 8.8697 1.2614 7C1.2614 5.131 1.2684 4.9098 1.302 4.172C1.3335 3.4888 1.4469 3.1185 1.5428 2.8714C1.6702 2.5452 1.8221 2.3114 2.0664 2.0664C2.3114 1.8214 2.5452 1.6702 2.8714 1.5428C3.1185 1.4469 3.4888 1.3328 4.1713 1.302C4.9098 1.2684 5.1303 1.2614 7 1.2614ZM7 9.3331C6.38122 9.3331 5.78779 9.08729 5.35025 8.64975C4.91271 8.21221 4.6669 7.61878 4.6669 7C4.6669 6.38122 4.91271 5.78779 5.35025 5.35025C5.78779 4.91271 6.38122 4.6669 7 4.6669C7.61878 4.6669 8.21221 4.91271 8.64975 5.35025C9.08729 5.78779 9.3331 6.38122 9.3331 7C9.3331 7.61878 9.08729 8.21221 8.64975 8.64975C8.21221 9.08729 7.61878 9.3331 7 9.3331ZM7 3.4055C6.52796 3.4055 6.06055 3.49847 5.62444 3.67911C5.18834 3.85976 4.79208 4.12452 4.4583 4.4583C4.12452 4.79209 3.85976 5.18834 3.67911 5.62444C3.49847 6.06055 3.4055 6.52796 3.4055 7C3.4055 7.47204 3.49847 7.93945 3.67911 8.37556C3.85976 8.81166 4.12452 9.20791 4.4583 9.54169C4.79208 9.87547 5.18834 10.1402 5.62444 10.3209C6.06055 10.5015 6.52796 10.5945 7 10.5945C7.95332 10.5945 8.8676 10.2158 9.54169 9.54169C10.2158 8.8676 10.5945 7.95332 10.5945 7C10.5945 6.04668 10.2158 5.1324 9.54169 4.4583C8.8676 3.78421 7.95332 3.4055 7 3.4055ZM11.5766 3.2634C11.5766 3.37371 11.5549 3.48294 11.5127 3.58485C11.4704 3.68677 11.4086 3.77937 11.3306 3.85737C11.2526 3.93537 11.16 3.99724 11.0581 4.03946C10.9561 4.08167 10.8469 4.1034 10.7366 4.1034C10.6263 4.1034 10.5171 4.08167 10.4151 4.03946C10.3132 3.99724 10.2206 3.93537 10.1426 3.85737C10.0646 3.77937 10.0028 3.68677 9.96054 3.58485C9.91833 3.48294 9.8966 3.37371 9.8966 3.2634C9.8966 3.04062 9.9851 2.82696 10.1426 2.66943C10.3002 2.5119 10.5138 2.4234 10.7366 2.4234C10.9594 2.4234 11.173 2.5119 11.3306 2.66943C11.4881 2.82696 11.5766 3.04062 11.5766 3.2634Z"
+                  fill="#000958" />
+              </svg>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="footer__right">
+          <div class="footer__row">
+            <div class="footer__colum">
+              <h3 class="footer__column--title">Explore</h3>
+              <ul class="footer__list">
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    About Us
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Services
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Our Team
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Adopt Pet
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__colum">
+              <h3 class="footer__column--title">Useful links</h3>
+              <ul class="footer__list">
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    FAQs
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Shop
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Terms of Use
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Site Map
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__colum">
+              <h3 class="footer__column--title">Contact Info</h3>
+              <ul class="footer__list">
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    abc@gmail.com
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    0 (800)-000-00-00
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    New York, NY, Rocawy 7
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__colum">
+              <h3 class="footer__column--title">Opening Time</h3>
+              <ul class="footer__list">
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Mon – Fri : 08.00 am – 20.00 pm
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Saturday : 09.00 am – 20.00 pm
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a href="#!" class="footer__link">
+                    Sunday: We are Closed
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="footer__coppy-right">Copyright & Design By Uihut</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
